@@ -7,55 +7,58 @@ app.get('/', function (req, res) {
 app.get('/api/courses', (req, res) => {
   res.send([
     {
-      title: ' ',
-      url:
-        'https://www.safe8well.my/image/safe8well/image/data/MobileApps/A829rZyk1591027128.png',
-      description: ' ',
-      id: 1,
+      id: '0',
+      title: 'ZBC PHARMACY',
+      barcode: '12345',
+      picture: require('./../../../../assets/COUPON0.png'),
+      content: (
+        <Text style={{ textAlign: 'center' }}>
+          {' '}
+          HANDBRAKE SPAREPART PRICE : RM24
+        </Text>
+      ),
     },
     {
-      title: '',
-      url:
-        'https://www.safe8well.my/image/safe8well/image/data/MobileApps/8oEk8KXL1591024920.png',
-      description: '',
-      id: 2,
-    },
-
-    {
-      title: ' ',
-      url:
-        'https://www.safe8well.my/image/safe8well/image/data/MobileApps/4u3pzu5R1591428659.png',
-      description: '',
-      id: 4,
-    },
-
-    {
-      title: ' ',
-      url:
-        'https://www.safe8well.my/image/safe8well/image/data/MobileApps/dLmTGMj11591428660.png',
-      description: ' ',
-      id: 6,
+      id: '1',
+      title: 'ZBC PHARMACY',
+      barcode: '12315',
+      picture: require('./../../../../assets/COUPON1.png'),
+      content: <Text>WHEELCHAIR TYRE 22,24 INCH : RM99</Text>,
     },
     {
-      title: ' ',
-      url:
-        'https://www.safe8well.my/image/safe8well/image/data/MobileApps/e9L6QbPJ1591428662.png',
-      description: ' ',
-      id: 7,
+      id: '2',
+      barcode: '123152',
+      title: 'ZBC PHARMACY',
+      picture: require('./../../../../assets/COUPON2.png'),
+      content: <Text>CASTOR WHEELCHAIR 8IN NARROW : RM33</Text>,
     },
     {
-      title: ' ',
-      url:
-        'https://www.safe8well.my/image/safe8well/image/data/MobileApps/MDeXRaeI1591429578.png',
-      description: ' ',
-      id: 8,
+      id: '3',
+      barcode: '123152',
+      title: 'ZBC PHARMACY ',
+      picture: require('./../../../../assets/COUPON3.png'),
+      content: <Text> MAG WHEEL & FF TYRE 16IN : RM130</Text>,
     },
     {
-      title: ' ',
-      url:
-        'https://www.safe8well.my/image/safe8welll/image/data/MobileApps/SShjS56J1591438165.png',
-      description: ' ',
-      id: 8,
+      id: '4',
+      barcode: '123152',
+      title: 'ZBC PHARMACY ',
+      picture: require('./../../../../assets/COUPON4.png'),
+      content: <Text>S'PART-ARMREST PAD 10IN RUBBER : RM31</Text>,
+    },
+    {
+      id: '5',
+      barcode: '123152',
+      title: 'ZBC PHARMACY ',
+      picture: require('./../../../../assets/COUPON5.png'),
+      content: <Text>S'PART-6/8IN RUBBER TIP (2PCS) : RM8.60</Text>,
+    },
+    {
+      id: '6',
+      barcode: '123152',
+      title: 'ZBC PHARMACY ',
+      picture: require('./../../../../assets/COUPON6.png'),
+      content: <Text>FOOTPLATE PLASTIC FOR WHEELCHAIR (1PAIR) : RM66</Text>,
     },
   ]);
 });
