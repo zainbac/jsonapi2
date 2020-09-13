@@ -4,7 +4,7 @@ const app = express();
 // app.get('/', function (req, res) {
 //   res.send('Hello Worlddd');
 // });
-app.get('/api/courses', (req, res) => {
+app.get('/', (req, res) => {
   res.send([
     {
       id: '0',
